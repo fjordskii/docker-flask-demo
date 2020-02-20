@@ -49,20 +49,22 @@ across every step of the deployment process.
 - Thusly speeds up deployment
 
 
-# basic Docker commands: https://docs.docker.com/engine/reference/builder/#from
-FROM -> Example -> FROM <image-name>
+# Basic Docker command
+> https://docs.docker.com/engine/reference/builder/#from
+
+FROM -> Example -> FROM (image-name)
 - Pulls down a base image from Docker registry
 - (explain base images, Docker registry etc)
 
-WORKDIR -> Example -> WORKDIR </path/to/workdir>
+WORKDIR -> Example -> WORKDIR (/path/to/workdir)
 - Used to define the working directory of a Docker container at any given time.
 - any other Docker command will be ran in the directory set by WORKDIR
 
-ADD -> Example -> ADD <src> <dest>
+ADD -> Example -> ADD (src) (dest)
 - copies new files, directories or remote file URLs from <src> and
 adds them to the filesystem of the image at the path <dest>
 
-CMD
+CMD -> Example -> CMD ["python", "app.py"]
 - executes a command via provided list
 # look at scc-api's Dockerfile
 
