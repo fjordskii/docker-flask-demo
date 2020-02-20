@@ -29,6 +29,8 @@ Download docker:
 
 `git clone git@github.com:fjordski/docker-flask-demo.git`
 
+`cd docker-flask-demo`
+
 `mkvirtualenv dockerpresentation`
 
 `workon dockerpresentation`
