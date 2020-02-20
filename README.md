@@ -1,22 +1,39 @@
 Download docker:
 > https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
-# Flask app setup
+# Flask/Docker App Setup
+### From Scratch:
+`cd <your/dir>`
 
-touch requirements.txt
-mkvirtualenv dockerpresentation
-workon dockerpresentation
-pip install flask
-pip freeze > requirements.txt
+`mkdir flask-docker`
 
--- copy boilerplate code --
--- fix the dumb typos in the example --
+`cd flask-docker`
 
-touch Dockerfile
-code Dockerfile
+`touch requirements.txt`
 
+`mkvirtualenv dockerpresentation`
 
-# Overview of Docker and what problem it solves
+`workon dockerpresentation`
+
+`pip install flask`
+
+`pip freeze > requirements.txt`
+
+`touch Dockerfile`
+
+`code Dockerfile`
+### Clone This Repo
+`cd <your/dir>`
+
+`git clone git@github.com:fjordski/docker-flask-demo.git`
+
+`mkvirtualenv dockerpresentation`
+
+`workon dockerpresentation`
+
+`pip install -r requirements.txt`
+
+# Overview of Docker and What Problem It Solves
 Docker was the follow up to Virtual Machines. Maybe some of you are familiar with Virtual Machines, they're a lot of fun, and certainly serve a purpose.
 For example, do you have a mac but you need to test a bug on Internet Explorer? You aren't launching IE on the mac soooo what do you do? Launch a VM with
 a Windows operating system! This gives you sort of a Russian Doll scenario with a computer inside a computer (which could also have yet another..and so on).
@@ -40,7 +57,7 @@ than comparable hardware.
 
 
 # How does Docker make my life easier?
-- You know our massive document called 'Getting started on OSX'? Docker eliminates that.
+- You know our massive document called 'Getting started on OSX'? Or even the install steps listed at the beginning of this document? Docker eliminates that.
   - Could potentially just be as simple as `docker-compose up -d --build`
 - it fixes the "well it works on MY machine" problem
 - makes local dev and production identical, perfect for development
