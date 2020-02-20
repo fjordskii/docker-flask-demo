@@ -56,7 +56,7 @@ than comparable hardware.
 - Containers exist to run a single application.
 
 
-# How does Docker make my life easier?
+# How Does Docker Make My Life Easier?
 - You know our massive document called 'Getting started on OSX'? Or even the install steps listed at the beginning of this document? Docker eliminates that.
   - Could potentially just be as simple as `docker-compose up -d --build`
 - it fixes the "well it works on MY machine" problem
@@ -91,15 +91,15 @@ CMD -> Example -> CMD ["python", "app.py"]
 ### Run image
 `docker run -d -p 5000:5000 flask-tutorial`
 
-### See that container is running
+### See That Container Is Running
 `docker container ls`
 
-### kill container
+### Kill Container
 `docker kill <hash>`
 
-### Prove local host isn't available
+### Prove Localhost Isn't Available
 
-### run without daemon mode (daemon just means a process that runs in the background)
+### Rrun Without Daemon Mode (daemon just means a process that runs in the background)
 `docker run -p 5000:5000 flask-tutorial`
 
 
