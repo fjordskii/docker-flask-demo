@@ -106,4 +106,4 @@ CMD -> Example -> CMD ["python", "app.py"]
 ### Rrun Without Daemon Mode (daemon just means a process that runs in the background)
 `docker run -p 5000:5000 flask-tutorial`
 
-
+### Create new folder, clone repo, build image, run container
