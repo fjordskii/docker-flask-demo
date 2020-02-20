@@ -1,3 +1,5 @@
+## Pre-requisite, must have docker installed on machine
+
 Download docker:
 > https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
