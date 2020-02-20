@@ -69,20 +69,20 @@ CMD -> Example -> CMD ["python", "app.py"]
 
 
 ### Build image
-docker build -t flask-tutorial:latest .
+`docker build -t flask-tutorial:latest .`
 
 ### Run image
-docker run -d -p 5000:5000 flask-tutorial
+`docker run -d -p 5000:5000 flask-tutorial`
 
 ### See that container is running
-docker container ls
+`docker container ls`
 
 ### kill container
-docker kill <hash>
+`docker kill <hash>`
 
 ### Prove local host isn't available
 
 ### run without daemon mode (daemon just means a process that runs in the background)
-docker run -p 5000:5000 flask-tutorial
+`docker run -p 5000:5000 flask-tutorial`
 
 
