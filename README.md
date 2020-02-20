@@ -66,24 +66,23 @@ adds them to the filesystem of the image at the path <dest>
 
 CMD -> Example -> CMD ["python", "app.py"]
 - executes a command via provided list
-# look at scc-api's Dockerfile
 
-# Build image
+
+### Build image
 docker build -t flask-tutorial:latest .
 
-# Run image
+### Run image
 docker run -d -p 5000:5000 flask-tutorial
 
-# see that container is running
+### See that container is running
 docker container ls
 
-# kill container
+### kill container
 docker kill <hash>
 
-# prove local host isn't available
+### Prove local host isn't available
 
-# run without daemon mode (daemon just means a process that runs in the background)
+### run without daemon mode (daemon just means a process that runs in the background)
 docker run -p 5000:5000 flask-tutorial
 
 
-# Look at SDC Dockerfile, walk through and read what it's doing
